@@ -1,0 +1,12 @@
+C:\Users\chisom\works\ASPNETMVC\CMK.FiletoDBMVC\CMK.FilestoDBMVC.DataAccess\bin\Debug\CMK.FilestoDBMVC.DataAccess.dll.config
+C:\Users\chisom\works\ASPNETMVC\CMK.FiletoDBMVC\CMK.FilestoDBMVC.DataAccess\bin\Debug\CMK.FilestoDBMVC.DataAccess.dll
+C:\Users\chisom\works\ASPNETMVC\CMK.FiletoDBMVC\CMK.FilestoDBMVC.DataAccess\bin\Debug\CMK.FilestoDBMVC.DataAccess.pdb
+C:\Users\chisom\works\ASPNETMVC\CMK.FiletoDBMVC\CMK.FilestoDBMVC.DataAccess\bin\Debug\EntityFramework.dll
+C:\Users\chisom\works\ASPNETMVC\CMK.FiletoDBMVC\CMK.FilestoDBMVC.DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\chisom\works\ASPNETMVC\CMK.FiletoDBMVC\CMK.FilestoDBMVC.DataAccess\bin\Debug\EntityFramework.xml
+C:\Users\chisom\works\ASPNETMVC\CMK.FiletoDBMVC\CMK.FilestoDBMVC.DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\chisom\works\ASPNETMVC\CMK.FiletoDBMVC\CMK.FilestoDBMVC.DataAccess\obj\Debug\CMK.FilestoDBMVC.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\chisom\works\ASPNETMVC\CMK.FiletoDBMVC\CMK.FilestoDBMVC.DataAccess\obj\Debug\CMK.FilestoDBMVC.DataAccess.csproj.CopyComplete
+C:\Users\chisom\works\ASPNETMVC\CMK.FiletoDBMVC\CMK.FilestoDBMVC.DataAccess\obj\Debug\CMK.FilestoDBMVC.DataAccess.dll
+C:\Users\chisom\works\ASPNETMVC\CMK.FiletoDBMVC\CMK.FilestoDBMVC.DataAccess\obj\Debug\CMK.FilestoDBMVC.DataAccess.pdb
+C:\Users\chisom\works\ASPNETMVC\CMK.FiletoDBMVC\CMK.FilestoDBMVC.DataAccess\obj\Debug\CMK.FilestoDBMVC.DataAccess.csprojAssemblyReference.cache

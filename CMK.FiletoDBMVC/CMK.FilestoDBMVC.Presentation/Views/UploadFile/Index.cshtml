@@ -1,0 +1,121 @@
+﻿@model CMK.FilestoDBMVC.Presentation.Models.CertificateObject
+
+@using CMK.FilestoDBMVC.DataAccess.Models_Generated;
+
+@{
+    ViewBag.Title = "Index";
+}
+
+@{
+    ViewBag.DBError = null;
+    IEnumerable<FilestoDb> listofFiles = null;
+
+    try
+    {
+        using (CustomersEntities db = new CustomersEntities())
+        {
+            listofFiles = db.FilestoDbs.ToList();
+        }
+    }
+    catch (Exception ex)
+    {
+        ViewBag.DBError = string.Format("Error: {0}",ex.Message);
+    }
+
+}
+
+@if (ViewBag.DBError != null)
+{
+    <h2>@ViewBag.DBError</h2>
+}
+else
+{
+    <div class="container">
+        <div class="col-md-12">
+            <h2>Certificate upload</h2>
+            @using (Html.BeginForm("Index", "UploadFile", FormMethod.Post, new { enctype = "multipart/form-data" }))
+            {
+                if (ViewBag.Error != null)
+                {
+                    <span class="alert-danger">@ViewBag.Error</span>
+                }
+
+                if (ViewBag.Message != null)
+                {
+                    <span class="alert-success">@ViewBag.Message</span>
+                }
+
+
+                <div id="fileUploaders">
+                    <p>
+                        @*<input type="file" name="myfile1" id="myfile1" />*@
+                        <input type="file" name="myfile" id="myfile" />
+                    </p>
+                </div>
+                <div>
+                    <a href="#" id="addUploader" style="font-size: 12pt; color: blue; text-decoration: underline;">Add Another</a>
+                    <br /><br />
+                    <input class="btn btn-primary" type="submit" name="submit" value="Upload File(s)" />
+
+                </div>
+
+
+            }
+        </div>
+
+        <div class="col-md-8">
+
+            <table class="table table-responsive table-striped">
+                <tr>
+                    <td><strong>Id</strong></td>
+                    <td><strong>File Name</strong></td>
+                    <td><strong>File Size</strong></td>
+                    <td><strong>File Extension</strong></td>
+                    <td><strong>Action</strong></td>
+                </tr>
+                @foreach (var item in listofFiles)
+                {
+                    <tr>
+                        <td>@item.Id</td>
+                        <td>@item.FileName</td>
+                        <td>@item.FileSize</td>
+                        <td>@item.FileExtension</td>
+                        <td>
+                            @Html.ActionLink("Open/Download", "ProcessRequest", new { id = item.Id })
+                        </td>
+                    </tr>
+                }
+            </table>
+
+
+
+        </div>
+    </div>
+}
+
+
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var scntDiv = $('#fileUploaders');
+        var i = $('#fileUploaders p').length + 1;
+
+        $('#addUploader').on('click', function (event) {
+            event.preventDefault();
+            //console.log('Current count: ' + i);
+            //$('<p><input type="file" id="myfile' + i + '" name="myfile' + i + '" /> <a href="#" id="removeUploader">Remove</a></p>').appendTo(scntDiv);
+            $('<p><input type="file" id="myfile" name="myfile" /> <a href="#" id="removeUploader">Remove</a></p>').appendTo(scntDiv);
+            i++;
+        });
+
+        $('#fileUploaders').on('click', '#removeUploader', function (event) {
+            event.preventDefault();
+            if (i > 2) {
+                $(this).parents('p').remove();
+                i--;
+            }
+
+        });
+    });
+</script>
