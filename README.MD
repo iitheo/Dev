@@ -12,6 +12,7 @@ Features
 ---------
 It supports pdf not more than 1MB. But the source code can easily be edited to accept other file types and also
 change the file size limit.
+It supports dynamic number of file attachments.
 
 
 How to install
