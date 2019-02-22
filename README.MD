@@ -10,9 +10,9 @@ The objective of this project is to upload and download files to your database.
 
 Features
 ---------
-It supports pdf not more than 1MB. But the source code can easily be edited to accept other file types and also
-change the file size limit.
-It supports dynamic number of file attachments.
+It supports pdf attachments not more than 1MB. But the source code can easily be edited to accept other file types.
+The file size limit can also be changed from the source code.
+It supports dynamic number of file attachments. You can add or a remove a file attachment from the front end.
 
 
 How to install
