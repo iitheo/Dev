@@ -20,8 +20,9 @@ How to install
 1. Download or clone the project.
 2. The project folder 'CMK.FiletoDBMVC' contains the web application folder.
 3. Open the file 'filetodb_script.txt'
-4. Create a Databse 'Customers' in your Microsoft SQL Server Database.
-5. Create the table structure as shown in the text file OR Copy and paste the following in your SQL Worksheet in 
+4. Create a Database 'Customers' in your Microsoft SQL Server Database.
+5. Run the script to create table in step 3.
+6. Create the table structure as shown in the text file OR Copy and paste the following in your SQL Worksheet in 
 SQL Server Management studio.
 
 USE [Customers]
