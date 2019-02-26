@@ -13,6 +13,7 @@ Features
 It supports pdf attachments not more than 1MB. But the source code can easily be edited to accept other file types.
 The file size limit can also be changed from the source code.
 It supports dynamic number of file attachments. You can add or a remove a file attachment from the front end.
+This is an MVC 5 project.
 
 
 How to install
